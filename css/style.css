@@ -290,6 +290,175 @@ html,body{
     border: 1px solid  rgb(255, 102, 0);
  }
  
+ /* disclosures  */
+ .text-p{
+     padding-top: 40px;
+ }
+ input:checked ~ i{
+ transform: rotate(-180deg);
+ transition: .2s ease-in-out;
+ }
+ .text-check{
+     background: rgba(206, 206, 206, 0.178);
+     visibility: hidden;
+     height: 0px;
+     transition: .3s;
+     top: 0;
+     overflow: hidden;
+     
+     text-align: left ;
+     font-size: 14px;
+ }
+ input:checked ~ .text-check{
+     visibility: visible;
+     height: 250px;
+     transition: .3s;
+    padding: 40px;
+     overflow-y: scroll;
+ }
+     
+ 
+ /* california */
+ .california{
+     background: #092A46;
+     text-align: center;
+     color: white;
+     padding: 20px 0px;
+ }
+ .california p:nth-child(1){
+     font-size: 50px;
+ }
+ .california p:nth-child(2){
+     font-size: 20px;
+ }
+     
+ .california >a{
+     display: inline-block;
+     color:white;
+     padding: 15px 20px;
+     background: rgb(32, 94, 175);
+ }
+ .california >a:hover{
+     display: inline-block;
+     color: rgb(32, 94, 175);
+     padding: 15px 20px;
+     background: white;
+ }
+ 
+ /* nav footer  */
+ .menu-search{
+     background: gray;
+     padding: 20px;
+ }
+ .menu-search ul li a{
+     color:rgb(185, 183, 183);
+     margin-left: 20px;
+ 
+ }
+ .menu-search ul li a:hover{
+     color:rgb(255, 254, 254);
+     margin-left: 20px;
+ 
+ }
+ .menu-search i.fas.fa-search {
+     font-size: 30px;
+ }
+ input[type="search"] {
+     outline: none !important;
+     border: none;
+     background: none;
+     padding: 10px;
+ }
+ ::placeholder{
+     color:white;
+     font-size: 30px;
+ }
+ .menu-search .text-right{
+     justify-content: flex-end;
+ }
+ 
+ /* footer-top */
+ .footer-top {
+     background: rgb(44, 44, 44);
+     padding: 20px;
+ }
+ .footer-top label{
+     color:white;
+ }
+ .footer-link a{
+     color:gray;
+ }
+ .footer-link a:hover{
+     color:white;
+ }
+ .footer-link ul {
+     padding-left: 0px;
+ }
+ 
+ .get-pad li{
+     padding-right: 40px;
+ }
+ .get-pad li:last-child{
+     padding-right: 0px;
+ }
+ 
+ .footer-top i{
+     visibility: hidden;
+ }
+ input:checked ~ .footer-link{
+     display: none;
+ }
+ 
+ /* Footer - contact  */
+ .contact{
+     background: #092A46;
+     padding: 30px 0px;
+ }
+ .bd-rds{
+   
+       background: lightblue;
+       padding: 10px;
+       border-radius: 50%;
+    
+ }
+ .bd-r{
+   
+     padding: 12px 8px 12px 12px;
+    
+   
+ }
+ .pd-li li{
+     padding-right: 40px;
+     
+ }
+ .pd-l li{
+     margin-left: 10px;
+ }
+ 
+ i.text-white.bd-r.fab.fa-facebook-square {
+     background: rgba(12, 93, 187, 0.507);
+ }
+ i.text-white.bd-r.fab.fa-twitter {
+     background: cornflowerblue;
+ }
+ i.text-white.bd-r.fab.fa-youtube {
+     background: rgb(250, 40, 40);
+ }
+ i.text-white.bd-r.fab.fa-instagram {
+     background: rgb(252, 145, 163);
+ }
+ .footer-contact{
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ /* footer - end  */
+ .end{
+     padding: 40px;
+ }
+ 
+ 
+ 
  /* reponsive Iphone 8plus*/
  @media only screen and (max-width: 450px) {
      .menu-area{
@@ -506,5 +675,3 @@ html,body{
  #myBtn:hover {
    background-color: #555;
  }
- 
- 
